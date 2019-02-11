@@ -3,6 +3,14 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
+  let options = {}
+
+  options['prember'] = {
+    urls: [
+      '/'
+    ]
+  }
+
   let app = new EmberApp(defaults, {
     // Add options here
   });
